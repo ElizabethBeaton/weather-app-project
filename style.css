@@ -1,0 +1,9 @@
+.weather-app {
+  border: #ffffff;
+  padding: 30px;
+  border-radius: 60px;
+  background-image: url("https://img.freepik.com/free-vector/evening-cloudy-sky-purple-background-with-group-cumulus-cirrus-clouds-flat-cartoon-illustration_1284-62768.jpg?w=900&t=st=1674307232~exp=1674307832~hmac=e24dcb1e0197d73340b6069fd4ebe71f19822d81698cd23d43a9576e73d07bde");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

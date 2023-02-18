@@ -14,8 +14,22 @@ h1 {
   padding: 30px;
   font-size: 50px;
 }
+li {
+  list-style: none;
+  padding: 10px;
+}
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.6%;
+}
 .container {
   color: #ffffff;
+}
+.temperature {
+  font-size: 66px;
+}
+.degree-units {
+  font-size: 46px;
 }
 .row {
   display: flex;
@@ -38,11 +52,33 @@ h1 {
   background-position: center;
   background-size: cover;
 }
+.weather-forecast-date {
+  font-size: 24px;
+}
+.weather-icon {
+  color: #ffffff;
+  font-size: 30px;
+}
+.weather-forecast-temperature-max {
+  font-weight: bold;
+}
 .forecast-information {
   padding: 40px;
-  font-size: 20px;
+  font-size: 26px;
 }
-li {
-  list-style: none;
-  padding: 10px;
+.line {
+  width: 100%;
+  margin: 20 20% 20 20%;
+  border: 2px solid #ffffff;
+}
+.text {
+  float: left;
+}
+.numbers {
+  float: right;
+}
+.github-link {
+  font-size: 20px;
+  color: #63399b;
+  text-align: center;
 }

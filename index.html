@@ -11,6 +11,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script
       src="https://kit.fontawesome.com/7200f15ddb.js"
       crossorigin="anonymous"
@@ -21,12 +22,12 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <h1>London</h1>
+          <h1 id="city">London</h1>
           <h2>Monday 14:02</h2>
-          <h3>Clouds</h3>
+          <h3 id="description">Clouds</h3>
           <p>
             <i class="fa-solid fa-cloud-sun main-weather-icon"></i> <br />
-            <span class="temperature">9</span
+            <span class="temperature" id="current-temperature">9</span
             ><span class="degree-units">˚C|F</span>
           </p>
           <div class="row">
@@ -88,22 +89,17 @@
             <ul>
               <li>
                 <span class="text">Feels like:</span>
-                <span class="numbers">5˚C</span>
-              </li>
-              <hr class="line" />
-              <li>
-                <span class="text">Precipitation:</span>
-                <span class="numbers">71%</span>
+                <span class="numbers" id="feels-like">5˚C</span>
               </li>
               <hr class="line" />
               <li>
                 <span class="text">Humidity:</span>
-                <span class="numbers">70%</span>
+                <span class="numbers" id="humidity">70%</span>
               </li>
               <hr class="line" />
               <li>
                 <span class="text">Wind:</span>
-                <span class="numbers">5km/h</span>
+                <span class="numbers" id="wind">5km/h</span>
               </li>
             </ul>
           </div>

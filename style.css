@@ -18,6 +18,9 @@ li {
   list-style: none;
   padding: 10px;
 }
+h3 {
+    text-transform: capitalize;
+}
 .col-2 {
   flex: 0 0 auto;
   width: 16.6%;

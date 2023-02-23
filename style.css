@@ -19,7 +19,7 @@ li {
   padding: 10px;
 }
 h3 {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 .col-2 {
   flex: 0 0 auto;
@@ -30,6 +30,21 @@ h3 {
 }
 .temperature {
   font-size: 66px;
+}
+.city-search-input {
+  border-radius: 20px;
+  border: 1px solid #6848ae;
+  font-size: 24px;
+}
+.search-location {
+  border-radius: 20px;
+  border: 1px solid #6848ae;
+  font-size: 24px;
+}
+.current-location {
+  border-radius: 20px;
+  border: 1px solid #6848ae;
+  font-size: 24px;
 }
 .degree-units {
   font-size: 46px;

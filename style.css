@@ -5,8 +5,7 @@ body {
 }
 h1,
 h2,
-h3,
-p {
+h3 {
   text-align: center;
   font-size: 40px;
 }
@@ -21,15 +20,16 @@ li {
 h3 {
   text-transform: capitalize;
 }
+.weather-temperature {
+  text-align: center;
+  font-size: 40px;
+}
 .col-2 {
   flex: 0 0 auto;
   width: 16.6%;
 }
 .container {
   color: #ffffff;
-}
-.temperature {
-  font-size: 66px;
 }
 .city-search-input {
   border-radius: 20px;
@@ -46,9 +46,24 @@ h3 {
   border: 1px solid #6848ae;
   font-size: 24px;
 }
-.degree-units {
-  font-size: 46px;
+.weather-temperature .degree-units {
+  font-size: 38px;
+  position: relative;
+  top: -20px;
+  color: rgb(33, 33, 33);
 }
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+.weather-temperature .temperature {
+  font-size: 66px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;

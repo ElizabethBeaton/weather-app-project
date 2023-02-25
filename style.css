@@ -46,11 +46,12 @@ h3 {
   border: 1px solid #6848ae;
   font-size: 24px;
 }
-.weather-temperature .degree-units {
+.weather-temperature .units {
   font-size: 38px;
   position: relative;
   top: -20px;
   color: rgb(33, 33, 33);
+  text-decoration: none;
 }
 .weather-temperature .active {
   color: rgb(33, 33, 33);

@@ -64,7 +64,9 @@ h3 {
 .weather-temperature .temperature {
   font-size: 66px;
 }
-
+a {
+  text-decoration: none;
+}
 .row {
   display: flex;
   flex-wrap: wrap;

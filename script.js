@@ -28,6 +28,19 @@ function formatDay(timestamp) {
 
   return days[day];
 }
+function formatTime(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${hours}:${minutes}`;
+}
 
 function displayForcast(response) {
   let forecast = response.data.daily;
@@ -59,7 +72,6 @@ function displayForcast(response) {
                   )}˚ </span>
                 </div>
               </div>
-              
     `;
     }
   });
@@ -79,6 +91,8 @@ function displayTemperature(response) {
   let feelsElement = document.querySelector("#feels-like");
   let humidElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
+  let sunriseElement = document.querySelector("#sunrise");
+  let sunsetElement = document.querySelector("#sunset");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
@@ -90,6 +104,8 @@ function displayTemperature(response) {
   feelsElement.innerHTML = `${Math.round(response.data.main.feels_like)}˚C`;
   humidElement.innerHTML = `${response.data.main.humidity}%`;
   windElement.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
+  sunriseElement.innerHTML = `${formatTime(response.data.sys.sunrise)}`;
+  sunsetElement.innerHTML = `${formatTime(response.data.sys.sunset)}`;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",

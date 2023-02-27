@@ -153,4 +153,20 @@ fahrenheitLink.addEventListener("click", displayfahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search("Berlin");
+search("London");
+
+function getCurrentPosition(position) {
+  let apiKey = "eb9542c65e739e0fb25ade97c749e2aa";
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+  axios.get(url).then(displayTemperature);
+}
+function handleCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(getCurrentPosition);
+}
+let currentLocation = document.querySelector("#current-button");
+currentLocation.addEventListener("click", handleCurrentLocation);
+
+navigator.geolocation.getCurrentPosition(getCurrentPosition);

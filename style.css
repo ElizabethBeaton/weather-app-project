@@ -91,12 +91,16 @@ a {
 .weather-forecast-date {
   font-size: 24px;
 }
-.weather-icon {
-  color: #ffffff;
-  font-size: 30px;
-}
 .weather-forecast-temperature-max {
   font-weight: bold;
+  font-size: 18px;
+}
+.weather-forecast-temperature-min {
+  font-size: 18px;
+}
+.icons {
+  width: 70px;
+  height: 70px;
 }
 .forecast-information {
   padding: 40px;
@@ -117,4 +121,5 @@ a {
   font-size: 20px;
   color: #63399b;
   text-align: center;
+  
 }

@@ -20,16 +20,28 @@ li {
 h3 {
   text-transform: capitalize;
 }
+a {
+  text-decoration: none;
+}
+.weather-app {
+  border: #ffffff;
+  padding: 30px;
+  border-radius: 60px;
+  background-image: url("https://img.freepik.com/free-vector/evening-cloudy-sky-purple-background-with-group-cumulus-cirrus-clouds-flat-cartoon-illustration_1284-62768.jpg?w=900&t=st=1674307232~exp=1674307832~hmac=e24dcb1e0197d73340b6069fd4ebe71f19822d81698cd23d43a9576e73d07bde");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .weather-temperature {
   text-align: center;
   font-size: 40px;
 }
-.col-2 {
-  flex: 0 0 auto;
-  width: 16.6%;
-}
 .container {
   color: #ffffff;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
 }
 .city-search-input {
   border-radius: 20px;
@@ -56,16 +68,20 @@ h3 {
 .weather-temperature .active {
   color: rgb(33, 33, 33);
   cursor: default;
-  text-decoration: none;
 }
 .weather-temperature .active:hover {
   text-decoration: none;
 }
 .weather-temperature .temperature {
-  font-size: 66px;
+  font-size: 70px;
 }
-a {
-  text-decoration: none;
+.weather-icon {
+  width: 150px;
+  height: 150px;
+}
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.6%;
 }
 .row {
   display: flex;
@@ -74,19 +90,6 @@ a {
   border: 3px solid #ffffff;
   border-radius: 30px;
   padding: 16px;
-}
-.weather-app-wrapper {
-  max-width: 600px;
-  margin: 30px auto;
-}
-.weather-app {
-  border: #ffffff;
-  padding: 30px;
-  border-radius: 60px;
-  background-image: url("https://img.freepik.com/free-vector/evening-cloudy-sky-purple-background-with-group-cumulus-cirrus-clouds-flat-cartoon-illustration_1284-62768.jpg?w=900&t=st=1674307232~exp=1674307832~hmac=e24dcb1e0197d73340b6069fd4ebe71f19822d81698cd23d43a9576e73d07bde");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .weather-forecast-date {
   font-size: 24px;
@@ -99,12 +102,12 @@ a {
   font-size: 18px;
 }
 .icons {
-  width: 70px;
-  height: 70px;
+  width: 62px;
+  height: 62px;
 }
 .forecast-information {
   padding: 40px;
-  font-size: 26px;
+  font-size: 28px;
 }
 .line {
   width: 100%;
@@ -118,8 +121,7 @@ a {
   float: right;
 }
 .github-link {
-  font-size: 20px;
+  font-size: 22px;
   color: #63399b;
   text-align: center;
-  
 }

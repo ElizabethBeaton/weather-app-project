@@ -104,7 +104,7 @@ function displayTemperature(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   feelsElement.innerHTML = `${Math.round(response.data.main.feels_like)}˚C`;
   humidElement.innerHTML = `${response.data.main.humidity}%`;
-  windElement.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
+  windElement.innerHTML = `${Math.round(response.data.wind.speed)} mph`;
   sunriseElement.innerHTML = `${formatTime(response.data.sys.sunrise)}`;
   sunsetElement.innerHTML = `${formatTime(response.data.sys.sunset)}`;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
